@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "6392eb567dbf34ba97268206"
+  },
+  "name": "Học viện siêu anh hùng Vigilantes - Tập 4",
+  "description": "My Hero Academia: Vigilantes is a Japanese superhero manga series written by Hideyuki Furuhashi and illustrated by Betten Court. It is both a spin-off and a prequel to Kōhei Horikoshi's manga series My Hero Academia.",
+  "type": "Action",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/4_998931e40d22441d9ca67adc7a4a79dd_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 27000
+},{
+  "_id": {
+    "$oid": "6392ec0a7dbf34ba97268209"
+  },
+  "name": "Dragon Ball Full Color - Phần sáu - Tập 1",
+  "description": "Kame Kame Haaa",
+  "type": "Action",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/1_1018cb98fbca496dbce09eb0181deb87_large.jpg",
+  "buyPrice": 77000,
+  "promotionPrice": 70000
+},{
+  "_id": {
+    "$oid": "6392ec847dbf34ba9726820c"
+  },
+  "name": "Vua sáng chế - Tập 23",
+  "description": "Điện máy Peace sở hữu kho sản phẩm gia dụng vô cùng đa dạng: từ nồi đất bình thường tới những chiếc nồi được bổ sung nhiều tính năng đặc biệt. Trong tập này, nhà Peace sẽ phóng vệ tinh lên vũ trụ!! Đây có phải bước tiến lớn giúp họ chính thức chinh phục vũ trụ không...!? ",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/23_931d60c6c44a4cc8ad9963565f33956d_large.jpg",
+  "buyPrice": 77000,
+  "promotionPrice": 70000  
+},{
+  "_id": {
+    "$oid": "6392ecb77dbf34ba9726820f"
+  },
+  "name": "666 Satan - Tập 4",
+  "description": "Để phục hồi Zero Shiki bị gãy, cuối cùng Jio và Ball cũng đã tới gặp Kirin – chuyên viên giám định trong lời đồn! Thứ đang chờ đợi cả hai là thử thách vô cùng đáng sợ!!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/4_665e410c925a47e68c71400ecc0eb004_large.jpg",
+  "buyPrice": 37000,
+  "promotionPrice": 27000  
+},{
+  "_id": {
+    "$oid": "6392ed117dbf34ba97268212"
+  },
+  "name": "Yu-Gi-Oh! GX - Tập 3",
+  "description": "Tại giải đấu bài với phần thưởng là quyền được thách đấu Kaiser Ryo, Judai và các bạn bắt đầu bước vào những trận đấu kịch tính để giành phần thưởng đó. Cùng lúc ấy, Mac",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/3_f3e6be4b939446178d65e6311007f519_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 27000
+},{
+  "_id": {
+    "$oid": "6392ed717dbf34ba97268218"
+  },
+  "name": "ONE PIECE - TẬP 97 (BÌA RỜI)",
+  "description": "Ngay trước cuộc chinh phạt diễn ra, Kanjuro bất ngờ có động thái lạ... Chưa kể Momono suke còn bị bắt cóc... Trong lúc Kinemon và mọi người đang tuyệt vọng tràn trề, Luffy - Law - Kid bất ngờ xuất trận, mang lại nguồn sáng mới cho cả bọn!! Cả binh đoàn rồng rắn thẳng tiến về đảo Quỷ!!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/97_4b083708c6d04e158c4f32c35283ecbc_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 25000
+}]

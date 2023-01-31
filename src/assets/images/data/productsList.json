@@ -1,0 +1,211 @@
+[{
+  "_id": {
+    "$oid": "6392eac726a99c607a3d3f81"
+  },
+  "name": "Kaguya - Cuộc chiến tỏ tình - Tập 7",
+  "description": "In the senior high school division of Shuchiin Academy, student council president Miyuki Shirogane and vice president Kaguya Shinomiya appear to be a perfect match. Kaguya is the daughter of a wealthy conglomerate family, and Miyuki is the top student at the school and well-known across the prefecture. Although they like each other, they are too proud to confess their love, as they believe whoever does so first would lose. The story follows their many schemes to make the other one confess or at least show signs of affection.",
+  "type": "Romantic",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/7_b1726a2d5d7642ff8f930ccdec9136a1_large.jpg",
+  "buyPrice": 40000,
+  "promotionPrice": 36000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670572743874"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670572743874"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392eb567dbf34ba97268206"
+  },
+  "name": "Học viện siêu anh hùng Vigilantes - Tập 4",
+  "description": "My Hero Academia: Vigilantes is a Japanese superhero manga series written by Hideyuki Furuhashi and illustrated by Betten Court. It is both a spin-off and a prequel to Kōhei Horikoshi's manga series My Hero Academia.",
+  "type": "Action",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/4_998931e40d22441d9ca67adc7a4a79dd_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 27000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670572886812"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670572886812"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ec0a7dbf34ba97268209"
+  },
+  "name": "Dragon Ball Full Color - Phần sáu - Tập 1",
+  "description": "Kame Kame Haaa",
+  "type": "Action",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/1_1018cb98fbca496dbce09eb0181deb87_large.jpg",
+  "buyPrice": 77000,
+  "promotionPrice": 70000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573066647"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573066647"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ec847dbf34ba9726820c"
+  },
+  "name": "Vua sáng chế - Tập 23",
+  "description": "Điện máy Peace sở hữu kho sản phẩm gia dụng vô cùng đa dạng: từ nồi đất bình thường tới những chiếc nồi được bổ sung nhiều tính năng đặc biệt. Trong tập này, nhà Peace sẽ phóng vệ tinh lên vũ trụ!! Đây có phải bước tiến lớn giúp họ chính thức chinh phục vũ trụ không...!? ",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/23_931d60c6c44a4cc8ad9963565f33956d_large.jpg",
+  "buyPrice": 77000,
+  "promotionPrice": 70000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573188241"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573188241"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ecb77dbf34ba9726820f"
+  },
+  "name": "666 Satan - Tập 4",
+  "description": "Để phục hồi Zero Shiki bị gãy, cuối cùng Jio và Ball cũng đã tới gặp Kirin – chuyên viên giám định trong lời đồn! Thứ đang chờ đợi cả hai là thử thách vô cùng đáng sợ!!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/4_665e410c925a47e68c71400ecc0eb004_large.jpg",
+  "buyPrice": 37000,
+  "promotionPrice": 27000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573239973"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573239973"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ed117dbf34ba97268212"
+  },
+  "name": "Yu-Gi-Oh! GX - Tập 3",
+  "description": "Tại giải đấu bài với phần thưởng là quyền được thách đấu Kaiser Ryo, Judai và các bạn bắt đầu bước vào những trận đấu kịch tính để giành phần thưởng đó. Cùng lúc ấy, Mac",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/3_f3e6be4b939446178d65e6311007f519_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 27000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573329684"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573329684"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ed717dbf34ba97268218"
+  },
+  "name": "ONE PIECE - TẬP 97 (BÌA RỜI)",
+  "description": "Ngay trước cuộc chinh phạt diễn ra, Kanjuro bất ngờ có động thái lạ... Chưa kể Momono suke còn bị bắt cóc... Trong lúc Kinemon và mọi người đang tuyệt vọng tràn trề, Luffy - Law - Kid bất ngờ xuất trận, mang lại nguồn sáng mới cho cả bọn!! Cả binh đoàn rồng rắn thẳng tiến về đảo Quỷ!!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/97_4b083708c6d04e158c4f32c35283ecbc_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 25000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573425619"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573425619"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392edb37dbf34ba9726821b"
+  },
+  "name": "DORAEMON - NOBITA VÀ CUỘC ĐẠI THỦY CHIẾN Ở XỨ SỞ NGƯỜI CÁ",
+  "description": "Doraemon đã dùng bảo bối “máy bơm nước giả tưởng” để biến cả thành phố nơi Nobita đang sống chìm xuống đáy biển. Sau khi phải rời khỏi hành tinh Aqua, cư dân tộc người cá đã đáp xuống Trái đất và âm thầm sống dưới đáy biển. Một ngày, công chúa Sophia đã vô tình bơi lạc vào vùng biển giả tưởng của Nobita… Phát hiện ra nơi ẩn náu của tộc người cá, Buikin và bè lũ quái vật người cá xuất hiện tấn công họ. Và cuộc đại thủy chiến liên quan đến thanh gươm truyền thuyết của tộc người cá bùng nổ!!!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/xu-so-nguoi-ca_layout-1_5096d419b6a34027acb151abc3f33f21_large.jpg",
+  "buyPrice": 30000,
+  "promotionPrice": 25000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573491562"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573491562"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ee387dbf34ba9726821e"
+  },
+  "name": "Dr.SLUMP Ultimate Edition - Tập 13",
+  "description": "hư vậy là bộ truyện tranh hài hước siêu kinh điển DR. SLUMP dưới ngòi búi dí dỏm sở trường của hoạ sĩ lão làng Akira Toriyama nay đã quay trở lại với diện mạo mới!! Phiên bản 2020 của NXB Kim Đồng với tên gọi DR. SLUMP - ULTIMATE EDITION được đầu tư về hình thức với 100% data, giữ nguyên trang màu gốc và bìa áo lấp lánh ánh sao!! ",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/13_94c339abf87e4b148c942b53023536f9_large.jpg",
+  "buyPrice": 70000,
+  "promotionPrice": 54000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573624814"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573624814"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6392ee937dbf34ba97268221"
+  },
+  "name": "Đội quân Doraemon đặc biệt - Tập 9",
+  "description": "Chòm sao băng đâm sầm vào Trái Đất thực ra là một con quái vật đáng sợ! Vũ khí bí mật nền văn minh cổ đại truyền lại cho con cháu mà nhóm Dora đang tìm kiếm liệu có đối phó được với nó không?Mời các em khám phá qua chương truyện “Bí ẩn sao băng” cùng 9 chương truyện không kém phần li kì khác nhé!",
+  "type": "Action,Funny",
+  "imageUrl": "https://product.hstatic.net/200000343865/product/9_a303bd587d314562acf5e4303ad5e6cd_large.jpg",
+  "buyPrice": 20000,
+  "promotionPrice": 16000,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670573715998"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670573715998"
+    }
+  },
+  "__v": 0
+}]

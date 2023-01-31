@@ -50,7 +50,7 @@ function ResponsiveAppBar() {
         signOut(auth).then(() => {
             // Sign-out successful.
             localStorage.removeItem('managerUser');
-            window.location.href = 'http://localhost:3000/manager';
+            window.location.href = 'https://shopcomic24h.up.railway.app/manager';
         }).catch((error) => {
             // An error happened.
         });

@@ -45,7 +45,7 @@ export default function SignIn() {
                 // Signed in
                 const user = userCredential;                
                 localStorage.setItem("managerUser", JSON.stringify(user));
-                window.location.href = 'http://localhost:3000/manager/login';
+                window.location.href = 'https://shopcomic24h.up.railway.app/manager/login';
             })           
             .catch((error) => {
                 // const errorCode = error.code;
@@ -57,7 +57,7 @@ export default function SignIn() {
     useEffect(() => {
         const data = localStorage.getItem('managerUser');
         if (data) {
-          window.location.href = 'http://localhost:3000/manager/login';
+          window.location.href = 'https://shopcomic24h.up.railway.app/manager/login';
         }
       }, []);
     return (

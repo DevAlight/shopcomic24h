@@ -26,9 +26,9 @@ export const fetchData = (limit, skip) => {
     });
     try {
       setTimeout(async () => {
-        const response = await fetch("http://localhost:8000/products?limit=" + limit + '&skip=' + ((skip - 1) * limit), requestOptions);
+        const response = await fetch("https://backend-shop24h.up.railway.app/products?limit=" + limit + '&skip=' + ((skip - 1) * limit), requestOptions);
         const data = await response.json();
-        const responseDataFull = await fetch("http://localhost:8000/products", requestOptions);
+        const responseDataFull = await fetch("https://backend-shop24h.up.railway.app/products", requestOptions);
         const dataFull = await responseDataFull.json();
         return dispatch({
           type: FETCH_SUCCESS_API,
@@ -67,11 +67,11 @@ export const filterClick = (searchData, limit, skip) => {
     });
     try {
       setTimeout(async () => {
-        const response = await fetch("http://localhost:8000/products-filter?limit=" + limit + '&skip=' + ((skip - 1) * limit)
+        const response = await fetch("https://backend-shop24h.up.railway.app/products-filter?limit=" + limit + '&skip=' + ((skip - 1) * limit)
           + "&type=" + searchData.type + "&name=" + searchData.name
           + " &minPrice=" + searchData.minPrice + "&maxPrice=" + searchData.maxPrice, requestOptions);
         const data = await response.json();
-        const responseDataFull = await fetch("http://localhost:8000/products-filter?type="
+        const responseDataFull = await fetch("https://backend-shop24h.up.railway.app/products-filter?type="
           + searchData.type + "&name=" + searchData.name
           + " &minPrice=" + searchData.minPrice + "&maxPrice=" + searchData.maxPrice, requestOptions);
         const dataFull = await responseDataFull.json();
@@ -129,7 +129,7 @@ export const saveUserLogin = (data) => {
       });
       try {
         setTimeout(async () => {
-          const response = await fetch(`http://localhost:8000/customers?email=${localData.email}`, requestOptions);
+          const response = await fetch(`https://backend-shop24h.up.railway.app/customers?email=${localData.email}`, requestOptions);
           const data = await response.json();
           return dispatch({
             type: USER_LOGIN,
@@ -174,7 +174,7 @@ export const gettingOrder = (id, orderData, orderDetail) => {
   return async (dispatch) => {
     try {
       // gọi API để tạo đơn hàng
-      const orderResponse = await fetch(`http://localhost:8000/customers/${id}/orders`, {
+      const orderResponse = await fetch(`https://backend-shop24h.up.railway.app/customers/${id}/orders`, {
         method: 'POST',
         body: JSON.stringify(orderData),
         headers: { 'Content-Type': 'application/json' },
@@ -182,12 +182,12 @@ export const gettingOrder = (id, orderData, orderDetail) => {
       const orderJson = await orderResponse.json();
       const orderId = orderJson.data._id;
       // gọi API để thêm chi tiết đơn hàng    
-      const orderDetailResponse = await fetch(`http://localhost:8000/orders/${orderId}/orderDetails`, {
+      const orderDetailResponse = await fetch(`https://backend-shop24h.up.railway.app/orders/${orderId}/orderDetails`, {
         method: 'POST',
         body: JSON.stringify({ products: orderDetail }),
         headers: { 'Content-Type': 'application/json' },
       });
-      const orderDetailJson = await orderDetailResponse.json();            
+      // const orderDetailJson = await orderDetailResponse.json();            
       return dispatch({
         type: GETTING_ORDER,
         orderID: orderJson.data.orderCode

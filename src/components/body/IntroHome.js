@@ -81,7 +81,7 @@ const IntroHome = () => {
         // Gọi API sau khi trang được tải        
         const fetchData = async () => {
             setTimeout(async () => {
-                const response = await fetch('http://localhost:8000/products-limit?type=Action&limit=7');
+                const response = await fetch('https://backend-shop24h.up.railway.app/products-limit?type=Action&limit=7');
                 const data = await response.json();
                 // Xử lý dữ liệu
                 setData(data.data)

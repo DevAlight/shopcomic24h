@@ -68,7 +68,7 @@ const CartPage = () => {
     //cộng thêm 1 vào giỏ
     const onBtnPlusClick = (event) => {
         let i = saveData.findIndex((el) => el.Product._id === event.Product._id)
-        if (i != -1) {
+        if (i !== -1) {
             saveData[i].quantity++;
             // đẩy dữ liệu các sản phẩm lên local storage
             localStorage.setItem("item", JSON.stringify(saveData));
@@ -78,7 +78,7 @@ const CartPage = () => {
     //trừ 1
     const onBtnMinusClick = (event) => {
         let i = saveData.findIndex((el) => el.Product._id === event.Product._id)
-        if (i != -1) {
+        if (i !== -1) {
             if (saveData[i].quantity > 1) {
                 saveData[i].quantity--;
                 // đẩy dữ liệu các sản phẩm lên local storage
@@ -91,7 +91,7 @@ const CartPage = () => {
     //xoá 
     const onBtnDelClick = (event) => {
         let i = saveData.findIndex((el) => el.Product._id === event.Product._id)
-        if (i != -1) {
+        if (i !== -1) {
             saveData.splice(i, 1);
             // đẩy dữ liệu các sản phẩm lên local storage
             localStorage.setItem("item", JSON.stringify(saveData));
@@ -229,13 +229,13 @@ const CartPage = () => {
                     <Grid container>
                         {/* show item trên cart */}
                         <Grid item md={8} sm={12}>
-                            {saveData[0] == undefined?<h3>Mua gì đi :3</h3>:null}
+                            {saveData[0] === undefined?<h3>Mua gì đi :3</h3>:null}
                             {cartBag.map((value, index) => {
                                 return (
                                     <Box sx={styleBox} key={index}>
                                         <Grid container>
                                             <Grid item md={2} sm={2}>
-                                                <img className="banner-img" src={value.Product.imageUrl} />
+                                                <img className="banner-img" src={value.Product.imageUrl} alt={index}/>
                                             </Grid>
                                             <Grid item md={10} sm={10}>
                                                 <Grid container sx={styleContainer}>

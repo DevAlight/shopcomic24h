@@ -35,7 +35,7 @@ function DetailProduct() {
             }
             else {
                 let i = saveData.findIndex((el) => el.Product._id === event._id)
-                if (i != -1) {
+                if (i !== -1) {
                     saveData[i].quantity++;
                     // đẩy dữ liệu các sản phẩm lên local storage
                     localStorage.setItem("item", JSON.stringify(saveData));
@@ -56,7 +56,7 @@ function DetailProduct() {
     }
     const onAddCartClick = (event) => {
         if (user) {
-            if (saveData[0] == undefined) {
+            if (saveData[0] === undefined) {
                 const ProductAdd = [{ Product: event, quantity: quantity }]
                 localStorage.setItem("item", JSON.stringify(ProductAdd));
                 //lưu dữ liệu sản phẩm đã chọn vào local storage
@@ -64,7 +64,7 @@ function DetailProduct() {
             }
             else {
                 let i = saveData.findIndex((el) => el.Product._id === event._id)
-                if (i != -1) {
+                if (i !== -1) {
                     saveData[i].quantity++;
                     // đẩy dữ liệu các sản phẩm lên local storage
                     localStorage.setItem("item", JSON.stringify(saveData));
@@ -88,7 +88,7 @@ function DetailProduct() {
     useEffect(() => {
         async function fetchProduct() {
             try {
-                const response = await fetch(`http://localhost:8000/products/${param}`);
+                const response = await fetch(`https://backend-shop24h.up.railway.app/products/${param}`);
                 const data = await response.json();
                 setProduct(data.data);
                 let vBread = [{ name: 'Home', url: '/' }, { name: 'Product', url: '/products' }
@@ -103,10 +103,10 @@ function DetailProduct() {
     }, [param]);
     useEffect(() => {
         if (product) {
-            fetch(`http://localhost:8000/products-limit?limit=6&type=${product.type}`)
+            fetch(`https://backend-shop24h.up.railway.app/products-limit?limit=6&type=${product.type}`)
                 .then(res => res.json())
                 .then(data => setRelatedProducts(data.data));
-            console.log(relatedProducts);
+            // console.log(relatedProducts);
         }
     }, [product]);
     const styleBox = { backgroundColor: 'white', margin: '1%', padding: '1%', borderRadius: '10px' }
@@ -123,7 +123,7 @@ function DetailProduct() {
                             <Box sx={styleBox}>
                                 <Grid container>
                                     <Grid item md={4} sm={4}>
-                                        <img className="banner-img" src={product.imageUrl} />
+                                        <img className="banner-img" src={product.imageUrl} alt='1'/>
                                     </Grid>
                                     <Grid item md={8} sm={8}>
                                         <Grid container>

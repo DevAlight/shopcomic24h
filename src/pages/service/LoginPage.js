@@ -15,7 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 //fireBase
 import auth from '../../firebase';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import {  signInWithEmailAndPassword } from "firebase/auth";
 
 function Copyright(props) {
     return (
@@ -48,8 +48,8 @@ export default function SignIn() {
                 window.location.href = 'http://localhost:3000/manager/login';
             })           
             .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
+                // const errorCode = error.code;
+                // const errorMessage = error.message;
                 // ..
             });
     };

@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box,Grid } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
 import IMAGE from '../../assets/images/banner/index'

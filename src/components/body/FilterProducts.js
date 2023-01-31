@@ -25,7 +25,7 @@ const FilterProducts = () => {
     }
     const onAddCartClick = (event) => {
         if (user) {
-            if (saveData[0] == undefined) {
+            if (saveData[0] === undefined) {
                 const ProductAdd = [{ Product: event, quantity: quantity }]
                 localStorage.setItem("item", JSON.stringify(ProductAdd));
                 //lưu dữ liệu sản phẩm đã chọn vào local storage
@@ -33,7 +33,7 @@ const FilterProducts = () => {
             }
             else {
                 let i = saveData.findIndex((el) => el.Product._id === event._id)
-                if (i != -1) {
+                if (i !== -1) {
                     saveData[i].quantity++;
                     // đẩy dữ liệu các sản phẩm lên local storage
                     localStorage.setItem("item", JSON.stringify(saveData));

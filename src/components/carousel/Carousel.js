@@ -1,4 +1,4 @@
-import { Box, Container, Grid } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
 import IMAGE from '../../assets/images/banner/index'
@@ -16,18 +16,18 @@ const Carousel = () => {
     return (
         <Grid container >
             <Grid item xs={12} md={12}>
-                <Slider {...settings} className="">                    
+                <Slider {...settings} className="">
                     <Box >
-                        <img className="banner-img" src={IMAGE.image2} />
+                        <img className="banner-img" src={IMAGE.image2} alt='1' />
                     </Box>
                     <Box >
-                        <img className="banner-img" src={IMAGE.image3} />
+                        <img className="banner-img" src={IMAGE.image3} alt='12' />
                     </Box>
                     <Box >
-                        <img className="banner-img" src={IMAGE.image4} />
+                        <img className="banner-img" src={IMAGE.image4} alt='12' />
                     </Box>
                     <Box >
-                        <img className="banner-img" src={IMAGE.image5} />
+                        <img className="banner-img" src={IMAGE.image5} alt='13' />
                     </Box>
                 </Slider>
             </Grid>

@@ -1,8 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
-import auth from '../../firebase';
-import { signInWithPopup, GoogleAuthProvider, FacebookAuthProvider } from 'firebase/auth';
-import { Grid, Modal, Button, TextField } from "@mui/material"
+
+import { Grid, Modal } from "@mui/material"
 import { Box } from "@mui/system";
 import { modelOrder } from '../../actions/users.action'
 

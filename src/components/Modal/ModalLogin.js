@@ -27,9 +27,11 @@ const ModalLogin = () => {
         if (type === 'facebook') {
             provider = new FacebookAuthProvider();
         }
+        provider.addScope('email');
         // Sau khi chọn phương thức, tiến hành login
         signInWithPopup(auth, provider)
-            .then((result) => {               
+            .then((result) => {  
+                console.log(result);             
                 dispatch(setModalLogin(false));
                 dispatch(saveUserLogin(result.user));
                 localStorage.setItem('user', JSON.stringify(result.user));

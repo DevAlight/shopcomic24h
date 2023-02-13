@@ -23,7 +23,7 @@ const initialState = {
     currentPage: 1,
     currentPageFiter: 1,
     searchData: null,
-    orderID: null
+    orderID: null  
 }
 
 export default function userReducer(state = initialState, action) {
@@ -70,7 +70,7 @@ export default function userReducer(state = initialState, action) {
             state.currentPageFiter = action.page;
             break;
         case GETTING_ORDER:
-            state.orderID = action.orderID;            
+            state.orderID = action.orderID;
             break;
 
         case OPEN_ORDER_MODAL:

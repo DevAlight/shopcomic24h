@@ -38,8 +38,9 @@ const UserInfoBacsic = () => {
     }
     //thực thi hàm nếu user mới
     const createUser = async () => {
+        console.log(Info);
         try {
-            const response = await fetch('http://localhost:8000/customers', {
+            const response = await fetch(process.env.REACT_APP_BASE_URL_BE+'/customers', {
                 method: 'POST',
                 body: JSON.stringify(Info),
                 headers: { 'Content-Type': 'application/json' },
@@ -78,7 +79,7 @@ const UserInfoBacsic = () => {
             fixData.address = userVerify.address;
         }
         try {
-            const response = await fetch(`http://localhost:8000/customers/${userVerify._id}`, {
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL_BE}/customers/${userVerify._id}`, {
                 method: 'PUT',
                 body: JSON.stringify(fixData),
                 headers: { 'Content-Type': 'application/json' },

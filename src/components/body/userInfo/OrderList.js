@@ -1,18 +1,10 @@
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import { saveUserLogin } from '../../../actions/users.action';
+import {  useSelector } from "react-redux";
 import { Box, Grid, TableContainer, Table,TableHead,TableCell,TableRow,TableBody } from "@mui/material"
 
 const OrderList = () => {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const { userVerify } = useSelector((reduxUser) => reduxUser.userReducer);
-    const saveUser = JSON.parse(localStorage.getItem("user", "[]")) || [];
-
-
-
-
-
-
+    // const saveUser = JSON.parse(localStorage.getItem("user", "[]")) || [];
     const styleBox = {
         borderRadius: '15px',
         padding: "2%",
@@ -43,7 +35,7 @@ const OrderList = () => {
                                         sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                                     >
                                         <TableCell component="th" scope="row">
-                                            {value}
+                                            {value.orderCode||value._id}
                                         </TableCell>                                        
                                     </TableRow>
                                 ))}

@@ -1,8 +1,8 @@
-import { Container, Box, Grid , List, ListSubheader, ListItemIcon, ListItemButton, ListItemText } from "@mui/material"
-import { changeBreadCromd } from '../actions/users.action';
+import { Container, Box, Grid, ButtonGroup, Button, TextField, Select, MenuItem, FormControl, List, ListSubheader, ListItemIcon, ListItemButton, ListItemText } from "@mui/material"
+import { changeBreadCromd, saveUserLogin } from '../actions/users.action';
 import BreadcrumbBar from "../components/Breadcrumb/BreadcrumbBar";
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import UserInfoBacsic from "../components/body/userInfo/UserInfo";
 import OrderList from "../components/body/userInfo/OrderList";
 import Header from "../components/header/Header";
@@ -10,8 +10,8 @@ import Footer from "../components/footer/Footer";
 
 const UserInfo = () => {
     const dispatch = useDispatch();
-    // const {  userVerify } = useSelector((reduxUser) => reduxUser.userReducer);
-    // const saveUser = JSON.parse(localStorage.getItem("user", "[]")) || [];
+    const { user, userVerify } = useSelector((reduxUser) => reduxUser.userReducer);
+    const saveUser = JSON.parse(localStorage.getItem("user", "[]")) || [];
     const [page, setPage] = useState(<UserInfoBacsic />)
     //chuyển đổi trang
     const onClickSwitch = (value) => {

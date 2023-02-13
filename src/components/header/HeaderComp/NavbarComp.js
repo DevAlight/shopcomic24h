@@ -78,7 +78,7 @@ const NavbarComp = () => {
                     <Grid container sx={{ alignItems: 'center' }}>
                         <Grid item xs={6} sm={6}>
                             <Grid container sx={styleLogo}>
-                                <img onClick={() => onClick('/')} className="logo-img" src={require('../../../assets/images/pngwing.png')} alt='logo'/>
+                                <img onClick={() => onClick('/')} className="logo-img" src={require('../../../assets/images/pngwing.png')} />
                                 <h5 className="select" onClick={() => onClick('/products')}>PRODUCT</h5>
                             </Grid>
                         </Grid>

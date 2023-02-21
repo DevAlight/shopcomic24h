@@ -46,9 +46,9 @@ const UserInfo = () => {
                     <BreadcrumbBar />
                 </Box>
                 <Grid container sx={{ backgroundColor: '#F5F5F5' }}>
-                    <Grid item md={12} sm={12}>
+                    <Grid item md={12} sm={12} xs={12}>
                         <Grid container sx={styleContainer}>
-                            <Grid item md={3} sm={6} mt={1}>
+                            <Grid item md={3} sm={12} xs={12} mt={1}>
                                 <Box sx={styleBox} >
                                     <List
                                         subheader={<ListSubheader>Thông tin</ListSubheader>}
@@ -75,7 +75,7 @@ const UserInfo = () => {
 
                                 </Box>
                             </Grid>
-                            <Grid item md={9} sm={6}>
+                            <Grid item md={9} sm={12} xs={12}>
                                 {page}
                             </Grid>
                         </Grid>

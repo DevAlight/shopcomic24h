@@ -5,14 +5,11 @@ const Footer = () => {
     return (
         <div style={{ backgroundColor: "White" }}>
             <Grid container>
-                <Grid item xs={8} sm={8}>
+                <Grid item md={8} sm={12} xs={12}>
                     <Grid container>
                         <Grid item xs={12} sm={12}>
-                            <Grid container className="mt-4">
-                                <Grid item xs={1.5} sm={1.5}>
-
-                                </Grid>
-                                <Grid item xs={3} sm={3}>
+                            <Grid container className="mt-4">                                
+                                <Grid item xs={4} sm={3}>
                                     <h5>PRODUCTS</h5>
                                     <p>Help Center</p>
                                     <p>Contract Us</p>
@@ -20,7 +17,7 @@ const Footer = () => {
                                     <p>Warranty</p>
 
                                 </Grid>
-                                <Grid item xs={3} sm={3}>
+                                <Grid item xs={4} sm={3}>
                                     <h5>PRODUCTS</h5>
                                     <p>Help Center</p>
                                     <p>Contract Us</p>
@@ -28,7 +25,7 @@ const Footer = () => {
                                     <p>Warranty</p>
 
                                 </Grid>
-                                <Grid item xs={3} sm={3}>
+                                <Grid item xs={4} sm={3}>
                                     <h5>PRODUCTS</h5>
                                     <p>Help Center</p>
                                     <p>Contract Us</p>
@@ -43,7 +40,7 @@ const Footer = () => {
                         </Grid>
                     </Grid>
                 </Grid>
-                <Grid item xs={4} sm={4} className='navbar_menu'>
+                <Grid item md={4} sm={12} className='navbar_menu'>
                     <Grid container className="mt-4">
                         <Grid item xs={12} sm={12}>
                             <Grid container className="mt-4">

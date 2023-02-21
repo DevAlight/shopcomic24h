@@ -88,9 +88,9 @@ const NavbarComp = () => {
                 </Grid>
                 <Grid item xs={6} sm={6} >
                     <Grid container>
-                        <Grid item xs={7} sm={7} >
+                        <Grid item xs={6} sm={6} >
                         </Grid>
-                        <Grid item xs={5} sm={5}>
+                        <Grid item xs={6} sm={6}>
                             <Grid container sx={styleLogo}>
                                 <Grid item xs={4} sm={4}>
                                     <Avatar className="icon-header"><i className="fa fa-search itext" aria-hidden="true"></i></Avatar>

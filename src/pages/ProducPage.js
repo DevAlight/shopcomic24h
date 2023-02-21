@@ -44,82 +44,61 @@ const ProducPage = () => {
                 <Grid container>
                     <Grid item md={12} sm={12}>
                         <Grid container>
-                            <Grid item md={2} sm={2} >
+                            <Grid item md={2} sm={12} xs={12} >
                                 <Box sx={{ backgroundColor: 'white' }}>
                                     <Grid container sx={{ backgroundColor: 'white', color: 'white' }}>
-                                        <h4>Tìm kiếm</h4>
-                                        <Grid item md={12} sm={12}>
-                                            <Grid container>
-                                                <Grid item md={12} sm={12}>
-                                                    <Box sx={{ backgroundColor: 'Highlight', color: 'white' }}>
-                                                        <h5>&nbsp;Tên Truyện</h5>
-                                                    </Box>
-                                                    <Grid container>
-                                                        <Grid item md={12} sm={12}>
-                                                            <TextField size="small" name="name"
-                                                                onChange={onChangeValue}
-                                                                label="Nhập tên truyện" fullWidth />
-                                                        </Grid>
-                                                    </Grid>
-                                                </Grid>
-                                            </Grid>
-                                            <Grid container mt={1}>
-                                                <Grid item md={12} sm={12}>
-                                                    <Box sx={{ backgroundColor: 'Highlight', color: 'white' }}>
-                                                        <h5>&nbsp;Thể loại</h5>
-                                                    </Box>
-                                                    <Grid container>
-                                                        <Grid item md={12} sm={12}>
-                                                            <Select fullWidth onChange={onChangeValue} name="type"
-                                                                defaultValue={'none'}
-                                                            >
-                                                                <MenuItem value={'none'}>-Thể loại-</MenuItem>
-                                                                <MenuItem value={'Romantic'}>Romantic</MenuItem>
-                                                                <MenuItem value={'Action'}>Action</MenuItem>
-                                                                <MenuItem value={'Funny'}>Funny</MenuItem>
-                                                                <MenuItem value={'Adventure'}>Adventure</MenuItem>
-                                                                <MenuItem value={'Mystery'}>Mystery</MenuItem>
-                                                            </Select>
-                                                        </Grid>
-                                                    </Grid>
-                                                </Grid>
-                                            </Grid>
-                                            <Grid container mt={1}>
-                                                <Grid item md={12} sm={12}>
-                                                    <Grid container>
-                                                        <Grid item md={12} sm={12}>
-                                                            <Box sx={{ backgroundColor: 'Highlight' }}>
-                                                                <h5>&nbsp;Giá cả</h5>
-                                                            </Box>
-                                                        </Grid>
-                                                    </Grid>
-                                                    <Grid container>
-                                                        <Grid item md={12} sm={12}>
-                                                            <TextField size="small"
-                                                                name="minPrice" onChange={onChangeValue}
-                                                                label="Giá thấp nhất"
-                                                                onKeyPress={(event) => { if (!/[0-9]/.test(event.key)) { event.preventDefault() } }}
-                                                                fullWidth />
-                                                        </Grid>
-                                                        <Grid item md={12} sm={12} mt={1}>
-                                                            <TextField size="small"
-                                                                name="maxPrice"
-                                                                onChange={onChangeValue}
-                                                                label="Giá cao nhất"
-                                                                onKeyPress={(event) => { if (!/[0-9]/.test(event.key)) { event.preventDefault() } }}
-                                                                fullWidth />
-                                                        </Grid>
-                                                    </Grid>
-                                                </Grid>
-                                            </Grid>
-                                            <Grid container mt={1} mb={1} sx={{ justifyContent: 'center' }}>
-                                                <Button variant="contained" onClick={onBtnFilterClick}> Tìm Kiếm</Button>
-                                            </Grid>
+                                        <Grid item md={12} sm={12} xs={12}>
+                                            <Box sx={{ backgroundColor: 'Highlight', color: 'white' }}>
+                                                <h5>&nbsp;Tên Truyện</h5>
+                                            </Box>
+                                            <TextField size="small" name="name"
+                                                onChange={onChangeValue}
+                                                label="Nhập tên truyện" fullWidth />
                                         </Grid>
+                                        <Grid item md={12} sm={12} xs={12}>
+                                            <Box sx={{ backgroundColor: 'Highlight', color: 'white' }}>
+                                                <h5>&nbsp;Thể loại</h5>
+                                            </Box>
+                                            <Select fullWidth onChange={onChangeValue} name="type"
+                                                defaultValue={'none'}
+                                            >
+                                                <MenuItem value={'none'}>-Thể loại-</MenuItem>
+                                                <MenuItem value={'Romantic'}>Romantic</MenuItem>
+                                                <MenuItem value={'Action'}>Action</MenuItem>
+                                                <MenuItem value={'Funny'}>Funny</MenuItem>
+                                                <MenuItem value={'Adventure'}>Adventure</MenuItem>
+                                                <MenuItem value={'Mystery'}>Mystery</MenuItem>
+                                            </Select>
+                                        </Grid>
+
+                                        <Grid item md={12} sm={12} xs={12}>
+                                            <Box sx={{ backgroundColor: 'Highlight', color: 'white' }}>
+                                                <h5>&nbsp;Giá cả</h5>
+                                            </Box>
+                                        </Grid>
+                                        <Grid item md={12} sm={6} xs={6}>
+                                            <TextField size="small"
+                                                name="minPrice" onChange={onChangeValue}
+                                                label="Giá thấp nhất"
+                                                onKeyPress={(event) => { if (!/[0-9]/.test(event.key)) { event.preventDefault() } }}
+                                                fullWidth />
+                                        </Grid>
+                                        <Grid item md={12} sm={6} xs={6}>
+                                            <TextField size="small"
+                                                name="maxPrice"
+                                                onChange={onChangeValue}
+                                                label="Giá cao nhất"
+                                                onKeyPress={(event) => { if (!/[0-9]/.test(event.key)) { event.preventDefault() } }}
+                                                fullWidth />
+                                        </Grid>
+                                        <Grid container mt={1} mb={1} sx={{ justifyContent: 'center' }}>
+                                            <Button variant="contained" onClick={onBtnFilterClick}> Tìm Kiếm</Button>
+                                        </Grid>
+
                                     </Grid>
                                 </Box>
                             </Grid>
-                            <Grid item md={10} sm={10}>
+                            <Grid item md={10} sm={12} xs={12}>
                                 {isFiter ?
                                     <FilterProducts />
                                     :

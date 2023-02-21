@@ -82,14 +82,14 @@ const FilterProducts = () => {
                         <Grid container>
                             {dataFiter.map((value, index) => {
                                 return (
-                                    <Grid item md={4} xs={6} key={index} >
+                                    <Grid item md={4} sm={12} xs={12} key={index} >
                                         <Card key={index}>
                                             <Box sx={styleBox}>
                                                 <Grid container margin={'auto'}>
-                                                    <Grid item md={6} sm={6}>
+                                                    <Grid item md={6} sm={6} xs={6}>
                                                         <CardMedia component="img" image={value.imageUrl} style={{ maxWidth: '192px' }} />
                                                     </Grid>
-                                                    <Grid item md={6} sm={6}>
+                                                    <Grid item md={6} sm={6} xs={6}>
                                                         <Grid container sx={{ marginLeft: '10px' }}>
                                                             <Grid item md={12} sm={12}>
                                                                 <span className="introComic" onClick={() => onClickDetail(value)}><p>{value.name}</p></span>

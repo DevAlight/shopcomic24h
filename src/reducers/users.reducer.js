@@ -4,7 +4,15 @@ import {
 } from "../constants/users.constants";
 const item = JSON.parse(localStorage.getItem("item")) || [];
 const userData = JSON.parse(localStorage.getItem("user")) || null;
-const userVerifyData = JSON.parse(localStorage.getItem("userVerify")) || null;
+const userVerifyDataString = localStorage.getItem("userVerify");
+let userVerifyData = null;
+if (userVerifyDataString) {
+    try {
+        userVerifyData = JSON.parse(userVerifyDataString);
+    } catch (error) {
+        console.error("Error parsing userVerifyDataString:", error);
+    }
+}
 
 const initialState = {
     pending: true,
@@ -23,7 +31,7 @@ const initialState = {
     currentPage: 1,
     currentPageFiter: 1,
     searchData: null,
-    orderID: null  
+    orderID: null
 }
 
 export default function userReducer(state = initialState, action) {

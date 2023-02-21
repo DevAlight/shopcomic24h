@@ -40,7 +40,7 @@ const UserInfoBacsic = () => {
     const createUser = async () => {
         console.log(Info);
         try {
-            const response = await fetch(process.env.REACT_APP_BASE_URL_BE+'/customers', {
+            const response = await fetch(process.env.REACT_APP_BASE_URL_BE + '/customers', {
                 method: 'POST',
                 body: JSON.stringify(Info),
                 headers: { 'Content-Type': 'application/json' },
@@ -119,7 +119,7 @@ const UserInfoBacsic = () => {
 
             </Grid>
             <Grid container sx={styleContainer}>
-                <Grid item md={5.8} sm={12}>
+                <Grid item md={5.8} sm={12} xs={12}>
                     {/* chỉ có thể nhập số */}
                     {userVerify ?
                         <TextField label="Số điện thoại" defaultValue={userVerify.phone} variant="filled" name="phone" onChange={onChangeValue} fullWidth onKeyPress={(event) => { if (!/[0-9]/.test(event.key)) { event.preventDefault() } }} />
@@ -129,7 +129,7 @@ const UserInfoBacsic = () => {
                 </Grid>
                 <Grid item md={0.4} >
                 </Grid>
-                <Grid item md={5.8} sm={12}>
+                <Grid item md={5.8} sm={12} xs={12}>
                     {userVerify ?
                         <TextField label="Quốc gia" variant="filled" defaultValue={userVerify.country} name="country" onChange={onChangeValue} fullWidth />
                         :
@@ -138,7 +138,7 @@ const UserInfoBacsic = () => {
                 </Grid>
             </Grid>
             <Grid container sx={styleContainer}>
-                <Grid item md={5.8} sm={12}>
+                <Grid item md={5.8} sm={12} xs={12}>
                     {userVerify ?
                         <TextField label="Địa chỉ" variant="filled" defaultValue={userVerify.address} name="address" onChange={onChangeValue} fullWidth />
                         :
@@ -148,7 +148,7 @@ const UserInfoBacsic = () => {
                 </Grid>
                 <Grid item md={0.4}>
                 </Grid>
-                <Grid item md={5.8} sm={12}>
+                <Grid item md={5.8} sm={12} xs={12}>
                     {userVerify ?
                         <TextField label="Tỉnh" variant="filled" defaultValue={userVerify.city} name="city" onChange={onChangeValue} fullWidth />
                         :
@@ -160,7 +160,6 @@ const UserInfoBacsic = () => {
             <Grid container sx={styleContainer}>
                 <Button variant="contained" onClick={onUpdateUserClick}>Cập nhập</Button>
             </Grid>
-
         </Box>
     )
 }

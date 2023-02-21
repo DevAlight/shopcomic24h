@@ -129,7 +129,7 @@ export const saveUserLogin = (data) => {
       });
       try {
         setTimeout(async () => {
-          const response = await fetch(`${process.env.REACT_APP_BASE_URL_BE}/customers?email=${localData.email}`, requestOptions);
+          const response = await fetch(`${process.env.REACT_APP_BASE_URL_BE}/customersEmail?email=${localData.email}`, requestOptions);
           const data = await response.json();
           return dispatch({
             type: USER_LOGIN,

@@ -140,10 +140,10 @@ const IntroHome = () => {
                                                             </Grid>
                                                         </Grid>
                                                         <Grid container sx={{ marginLeft: '10px' }}>
-                                                            <Grid item md={6} sm={12}>
+                                                            <Grid item md={6} sm={6}>
                                                                 <Button variant="contained" size="small" onClick={() => onBuyNowClick(value)}>Mua ngay</Button>
                                                             </Grid>
-                                                            <Grid item md={6} sm={12}>
+                                                            <Grid item md={6} sm={6}>
                                                                 <Button variant="outlined" size="small" onClick={() => onAddCartClick(value)}>+Giỏ hàng</Button>
                                                             </Grid>
                                                         </Grid>
